@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:plant_app/color/constant.dart';
-import 'package:plant_app/screens/btn.dart';
-import 'package:plant_app/screens/card.dart';
+import 'package:plant_app/components/btn.dart';
+import 'package:plant_app/components/card.dart';
 import 'package:plant_app/screens/details_screen.dart';
-import 'package:plant_app/screens/featuredcard.dart';
-import 'package:plant_app/screens/text.dart';
+import 'package:plant_app/components/featuredcard.dart';
+import 'package:plant_app/components/text.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);

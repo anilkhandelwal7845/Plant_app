@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:plant_app/color/constant.dart';
-import 'package:plant_app/screens/icon_btn.dart';
+import 'package:plant_app/components/icon_btn.dart';
 
 class DetailsScreen extends StatefulWidget {
   const DetailsScreen({super.key});
