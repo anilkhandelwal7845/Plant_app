@@ -54,12 +54,20 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                         Padding(
                           padding: const EdgeInsets.only(right: 20),
-                          child: Icon(
-                            Icons.account_tree,
-                            size: 40,
-                            color: Colors.white,
+                          child: CircleAvatar(
+                            maxRadius: 25,
+                            minRadius: 25,
+
+                            backgroundImage: NetworkImage(
+                              'https://floweraura-blog-img.s3.ap-south-1.amazonaws.com/Bedroom+Plants/plantix.jpg',
+                            ),
+
+                            //               child: Image.network( 'https://floweraura-blog-img.s3.ap-south-1.amazonaws.com/Bedroom+Plants/plantix.jpg' ,
+
+                            //   fit: BoxFit.cover,
+                            // ),
                           ),
-                        ),
+                        )
                       ],
                     ),
                   ),
@@ -119,73 +127,61 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Row(
                 children: [
                   PlantCard(
-                      country: "India",
-                      image:
-                          'https://www.plantshop.me/media/product/Kentia_Palm_-a-_plantshopme.jpg',
-                      title: "Kentia Palm",
-                      price: 2000,
-                     ),
+                    country: "India",
+                    image:
+                        'https://www.plantshop.me/media/product/Kentia_Palm_-a-_plantshopme.jpg',
+                    title: "Kentia Palm",
+                    price: 2000,
+                  ),
                   PlantCard(
-                      country: "India",
-                      image:
-                          'https://cdn.shopify.com/s/files/1/0479/9089/8856/products/V.G.FicusPlantN.Stick6FEET.jpg?v=1618553049',
-                      title: "Kentia Palm",
-                      price: 200,
-                      
-                      ),
+                    country: "India",
+                    image:
+                        'https://cdn.shopify.com/s/files/1/0479/9089/8856/products/V.G.FicusPlantN.Stick6FEET.jpg?v=1618553049',
+                    title: "Kentia Palm",
+                    price: 200,
+                  ),
                   PlantCard(
-                      country: "India",
-                      image:
-                          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwoCcjV5qwFIHUW23VLXcTHzf9ZVFTVGwOj7mXA1xwUA&usqp=CAU&ec=48665699',
-                      title: "Kentia Palm",
-                      price: 400,
-                      
-                     
-                      ),
+                    country: "India",
+                    image:
+                        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwoCcjV5qwFIHUW23VLXcTHzf9ZVFTVGwOj7mXA1xwUA&usqp=CAU&ec=48665699',
+                    title: "Kentia Palm",
+                    price: 400,
+                  ),
                   PlantCard(
-                      country: "India",
-                      image:
-                          'https://target.scene7.com/is/image/Target/GUEST_cf6a8c1d-a2cb-4a8a-aef6-ca3f3b9118fc',
-                      title: "Kentia Palm",
-                      price: 900,
-                    
-                      ),
-
-                       PlantCard(
-                      country: "India",
-                      image:
-                          'https://ii2.pepperfry.com/media/catalog/product/g/r/494x544/green-fabric-real-touch-artificial-fiddle-leaf-fig-plant-without-pot-by-fourwalls-green-fabric-real--ud63n9.jpg',
-                      title: "Kentia Palm",
-                      price: 900,
-                     
-                      ),
-
-                       PlantCard(
-                      country: "India",
-                      image:
-                          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNFoBKW1hJTFFUoCWpH1JKqEVmcj8gCytGhro_NZzoTuYlfBGJEiESux-0YT02dtJqVpDXLbbS7Nk&usqp=CAU&ec=48665699',
-                      title: "Kentia Palm",
-                      price: 900,
-                     
-                      ),
-
-                       PlantCard(
-                      country: "India",
-                      image:
-                          'https://images.costco-static.com/ImageDelivery/imageService?profileId=12026540&imageId=1363170-847__1&recipeName=350',
-                      title: "Kentia Palm",
-                      price: 900,
-                      
-                      ),
-
-                       PlantCard(
-                      country: "India",
-                      image:
-                          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi6KBzlMfuH8drn0PwiGKd8VmmgMsQYQUZocEFGFfqNh3TUaHbk0rX3jRZQbTps_hjUzL0ilzgkZ8&usqp=CAU&ec=48665699',
-                      title: "Kentia Palm",
-                      price: 900,
-                      
-                      ),
+                    country: "India",
+                    image:
+                        'https://target.scene7.com/is/image/Target/GUEST_cf6a8c1d-a2cb-4a8a-aef6-ca3f3b9118fc',
+                    title: "Kentia Palm",
+                    price: 900,
+                  ),
+                  PlantCard(
+                    country: "India",
+                    image:
+                        'https://ii2.pepperfry.com/media/catalog/product/g/r/494x544/green-fabric-real-touch-artificial-fiddle-leaf-fig-plant-without-pot-by-fourwalls-green-fabric-real--ud63n9.jpg',
+                    title: "Kentia Palm",
+                    price: 900,
+                  ),
+                  PlantCard(
+                    country: "India",
+                    image:
+                        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNFoBKW1hJTFFUoCWpH1JKqEVmcj8gCytGhro_NZzoTuYlfBGJEiESux-0YT02dtJqVpDXLbbS7Nk&usqp=CAU&ec=48665699',
+                    title: "Kentia Palm",
+                    price: 900,
+                  ),
+                  PlantCard(
+                    country: "India",
+                    image:
+                        'https://images.costco-static.com/ImageDelivery/imageService?profileId=12026540&imageId=1363170-847__1&recipeName=350',
+                    title: "Kentia Palm",
+                    price: 900,
+                  ),
+                  PlantCard(
+                    country: "India",
+                    image:
+                        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi6KBzlMfuH8drn0PwiGKd8VmmgMsQYQUZocEFGFfqNh3TUaHbk0rX3jRZQbTps_hjUzL0ilzgkZ8&usqp=CAU&ec=48665699',
+                    title: "Kentia Palm",
+                    price: 900,
+                  ),
                 ],
               ),
             ),
