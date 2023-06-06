@@ -17,11 +17,11 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 245, 239, 239),
+      backgroundColor: const Color.fromARGB(255, 245, 239, 239),
       appBar: AppBar(
         elevation: 0,
         backgroundColor: kPrimearyColor,
-        leading: Icon(Icons.menu),
+        leading: const Icon(Icons.menu),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -31,18 +31,18 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Stack(
                 children: [
                   Container(
-                    margin: EdgeInsets.only(bottom: 20),
+                    margin: const EdgeInsets.only(bottom: 20),
                     height: MediaQuery.of(context).size.height / 4.5,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                         color: kPrimearyColor,
                         borderRadius: BorderRadius.only(
                             bottomLeft: Radius.circular(40),
                             bottomRight: Radius.circular(40))),
-                    child: Row(
+                    child: const Row(
                       children: [
                         Expanded(
                           child: Padding(
-                            padding: const EdgeInsets.only(left: 20),
+                            padding: EdgeInsets.only(left: 20),
                             child: Text(
                               "Hi Anil!",
                               style: TextStyle(
@@ -53,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(right: 20),
+                          padding: EdgeInsets.only(right: 20),
                           child: CircleAvatar(
                             maxRadius: 25,
                             minRadius: 25,
@@ -77,8 +77,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     right: 0,
                     child: Container(
                       alignment: Alignment.center,
-                      padding: EdgeInsets.only(left: 13, right: 15),
-                      margin: EdgeInsets.only(left: 30, right: 30),
+                      padding: const EdgeInsets.only(left: 13, right: 15),
+                      margin: const EdgeInsets.only(left: 30, right: 30),
                       height: 50,
                       width: MediaQuery.of(context).size.width / 1.1,
                       decoration: BoxDecoration(
@@ -86,11 +86,11 @@ class _HomeScreenState extends State<HomeScreen> {
                             BoxShadow(
                                 color: kPrimearyColor.withOpacity(0.23),
                                 blurRadius: 50,
-                                offset: Offset(0, 10))
+                                offset: const Offset(0, 10))
                           ],
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(20)),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Expanded(
                             child: TextField(
@@ -113,7 +113,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
             ),
-            Row(
+            const Row(
               children: [
                 MainText(text: "Recomended"),
                 Spacer(),
@@ -131,42 +131,53 @@ class _HomeScreenState extends State<HomeScreen> {
                     image:
                         'https://www.plantshop.me/media/product/Kentia_Palm_-a-_plantshopme.jpg',
                     title: "Kentia Palm",
-                    price: 2000,
+                    price: 1300,
+                    press: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => DetailsScreen()));
+                    },
                   ),
                   PlantCard(
                     country: "India",
                     image:
                         'https://cdn.shopify.com/s/files/1/0479/9089/8856/products/V.G.FicusPlantN.Stick6FEET.jpg?v=1618553049',
-                    title: "Kentia Palm",
-                    price: 200,
+                    title: "FEJKA",
+                    price: 760,
+                    press: () {},
                   ),
                   PlantCard(
                     country: "India",
                     image:
                         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwoCcjV5qwFIHUW23VLXcTHzf9ZVFTVGwOj7mXA1xwUA&usqp=CAU&ec=48665699',
-                    title: "Kentia Palm",
-                    price: 400,
+                    title: "Synthetic Green",
+                    price: 600,
+                    press: () {},
                   ),
                   PlantCard(
                     country: "India",
                     image:
                         'https://target.scene7.com/is/image/Target/GUEST_cf6a8c1d-a2cb-4a8a-aef6-ca3f3b9118fc',
-                    title: "Kentia Palm",
-                    price: 900,
+                    title: "Polyester Della Multicolor",
+                    price: 770,
+                    press: () {},
                   ),
                   PlantCard(
                     country: "India",
                     image:
                         'https://ii2.pepperfry.com/media/catalog/product/g/r/494x544/green-fabric-real-touch-artificial-fiddle-leaf-fig-plant-without-pot-by-fourwalls-green-fabric-real--ud63n9.jpg',
-                    title: "Kentia Palm",
+                    title: "Bonsai Tree",
                     price: 900,
+                    press: () {},
                   ),
                   PlantCard(
                     country: "India",
                     image:
                         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNFoBKW1hJTFFUoCWpH1JKqEVmcj8gCytGhro_NZzoTuYlfBGJEiESux-0YT02dtJqVpDXLbbS7Nk&usqp=CAU&ec=48665699',
-                    title: "Kentia Palm",
+                    title: "Fiddle Leaf",
                     price: 900,
+                    press: () {},
                   ),
                   PlantCard(
                     country: "India",
@@ -174,18 +185,20 @@ class _HomeScreenState extends State<HomeScreen> {
                         'https://images.costco-static.com/ImageDelivery/imageService?profileId=12026540&imageId=1363170-847__1&recipeName=350',
                     title: "Kentia Palm",
                     price: 900,
+                    press: () {},
                   ),
                   PlantCard(
                     country: "India",
                     image:
                         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi6KBzlMfuH8drn0PwiGKd8VmmgMsQYQUZocEFGFfqNh3TUaHbk0rX3jRZQbTps_hjUzL0ilzgkZ8&usqp=CAU&ec=48665699',
-                    title: "Kentia Palm",
+                    title: "Sansevieria Snake",
                     price: 900,
+                    press: () {},
                   ),
                 ],
               ),
             ),
-            Row(
+            const Row(
               children: [
                 MainText(text: "Featured Plants"),
                 Spacer(),
@@ -194,7 +207,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 //Here Add Btn
               ],
             ),
-            SingleChildScrollView(
+            const SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [

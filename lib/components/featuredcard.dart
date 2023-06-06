@@ -10,7 +10,7 @@ class FeaturedCard extends StatelessWidget {
               height: 190,
               width: MediaQuery.of(context).size.width*
               0.80,
-              margin: EdgeInsets.only(top: 20 ,bottom: 20 , left: 0),
+              margin: const EdgeInsets.only(top: 20 ,bottom: 20 , left: 0),
               decoration: BoxDecoration(borderRadius: BorderRadius.circular(20) ,
               image: DecorationImage(image: NetworkImage(image))),
               

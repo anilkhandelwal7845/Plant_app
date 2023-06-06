@@ -12,7 +12,7 @@ class Btn extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 90,
-      margin: EdgeInsets.only(top: 32, right: 10),
+      margin: const EdgeInsets.only(top: 32, right: 10),
       child: ElevatedButton(
         
           style: ElevatedButton.styleFrom(
@@ -23,7 +23,7 @@ class Btn extends StatelessWidget {
             // foreground (text) color
                       ),
           onPressed: () {} ,
-          child: Text("More")),
+          child: const Text("More")),
     );
   }
 }

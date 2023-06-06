@@ -5,25 +5,25 @@ import 'package:plant_app/screens/details_screen.dart';
 class PlantCard extends StatelessWidget {
   final String image, title, country;
   final int price;
+   Function() press ; 
  
   
-  const PlantCard(
+   PlantCard(
       {super.key,
       required this.country,
       required this.image,
       required this.title,
       required this.price,
+      required this.press ,
       
       });
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-       onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>DetailsScreen()));
-            } ,
+       onTap: press,
       child: Container(
-        margin: EdgeInsets.only(
+        margin: const EdgeInsets.only(
           left: 10,
           right: 5,
           top: 20,
@@ -46,15 +46,15 @@ class PlantCard extends StatelessWidget {
            
             GestureDetector(
               child: Container(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.only(
+                    borderRadius: const BorderRadius.only(
                         bottomLeft: Radius.circular(13),
                         bottomRight: Radius.circular(13)),
                     color: Colors.white,
                     boxShadow: [
                       BoxShadow(
-                          offset: Offset(0, 0),
+                          offset: const Offset(0, 0),
                           blurRadius: 20,
                           color: kPrimearyColor.withOpacity(0.23)),
                     ]),
@@ -76,12 +76,12 @@ class PlantCard extends StatelessWidget {
                                 color: kPrimearyColor.withOpacity(0.7)))
                       ]),
                     ),
-                    Spacer(),
+                    const Spacer(),
                     Padding(
                       padding: const EdgeInsets.only(top: 15 ,left: 2 ,right: 1),
                       child: Text(
                         '\u{20B9}$price',
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 15,
                             color: kPrimearyColor, fontWeight: FontWeight.bold),
                       ),

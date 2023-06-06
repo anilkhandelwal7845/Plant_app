@@ -28,27 +28,27 @@ class _DetailsScreenState extends State<DetailsScreen> {
                         Align(
                           alignment: Alignment.topLeft,
                           child: IconButton(
-                              padding: EdgeInsets.only(right: 30, top: 20),
+                              padding: const EdgeInsets.only(right: 30, top: 20),
                               onPressed: () {
                                 Navigator.pop(context);
                               },
-                              icon: Icon(
+                              icon: const Icon(
                                 Icons.arrow_back_ios,
                                 color: kPrimearyColor,
                                 size: 30,
                               )),
                         ),
-                        Spacer(),
-                        IconBtn(
+                        const Spacer(),
+                        const IconBtn(
                           iconname: Icons.brightness_high_outlined,
                         ),
-                        IconBtn(
+                        const IconBtn(
                           iconname: Icons.support_agent,
                         ),
-                        IconBtn(
+                        const IconBtn(
                           iconname: Icons.attractions_sharp,
                         ),
-                        IconBtn(
+                        const IconBtn(
                           iconname: Icons.crop_square_sharp,
                         )
                       ],
@@ -61,27 +61,27 @@ class _DetailsScreenState extends State<DetailsScreen> {
                     decoration: BoxDecoration(
                         boxShadow: [
                           BoxShadow(
-                            offset: Offset(0, 0),
+                            offset: const Offset(0, 0),
                             blurRadius: 90,
                             color: kPrimearyColor.withOpacity(0.3),
                           )
                         ],
-                        borderRadius: BorderRadius.only(
+                        borderRadius: const BorderRadius.only(
                             bottomLeft: Radius.circular(60),
                             topLeft: Radius.circular(60)),
-                        image: DecorationImage(
+                        image: const DecorationImage(
                             image: NetworkImage(
-                                'https://ii1.pepperfry.com/media/catalog/product/s/u/494x544/sunred-polyster-peony-flower-stick-artificial-flowers-without-pot-set-of-2-by-fourwalls-sunred-polys-vmwfob.jpg'),
+                                'https://www.plantshop.me/media/product/Kentia_Palm_-a-_plantshopme.jpg'),
                             fit: BoxFit.cover)),
                   )
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 25,
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 15, right: 10),
+            const Padding(
+              padding: EdgeInsets.only(left: 15, right: 10),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -115,8 +115,8 @@ class _DetailsScreenState extends State<DetailsScreen> {
                 ],
               ),
             ),
-            SizedBox(
-              height: 40,
+            const SizedBox(
+              height: 20,
             ),
             Expanded(
               child: Row(
@@ -127,7 +127,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                     child: ElevatedButton(
                       
                         style: ElevatedButton.styleFrom(
-                          shape: RoundedRectangleBorder(
+                          shape: const RoundedRectangleBorder(
                             borderRadius: BorderRadius.only(
                               topRight: Radius.circular(25)
                             )
@@ -136,14 +136,14 @@ class _DetailsScreenState extends State<DetailsScreen> {
                           primary: kPrimearyColor,
                         ),
                         onPressed: () {},
-                        child: Text(
+                        child: const Text(
                           "Buy Now",
                           style: TextStyle(fontSize: 20),
                         )),
                   ) ,
                   Expanded(
             
-                    child: TextButton(onPressed: (){}, child: Text("Description" ,style: TextStyle(color: kPrimearyColor ,fontSize: 20),)),
+                    child: TextButton(onPressed: (){}, child: const Text("Description" ,style: TextStyle(color: kPrimearyColor ,fontSize: 20),)),
                     ) ,
                
                 ],

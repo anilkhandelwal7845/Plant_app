@@ -11,7 +11,7 @@ class IconBtn extends StatelessWidget {
     return    Container(
       margin: EdgeInsets.symmetric(vertical: MediaQuery.of(context).size.height*0.05) ,
                           
-                          padding: EdgeInsets.all(5),
+                          padding: const EdgeInsets.all(5),
                           child: Icon(iconname,size: 40,color: kPrimearyColor,),
                           height: 60,
                           width: 60,
@@ -22,7 +22,7 @@ class IconBtn extends StatelessWidget {
                               BoxShadow(
                                // color: Colors.white,
                                 color: kPrimearyColor.withOpacity(0.4) ,
-                                offset: Offset(-15 , -15) ,
+                                offset: const Offset(-15 , -15) ,
                                 blurRadius: 20
                               )
                             ]

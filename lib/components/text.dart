@@ -12,7 +12,7 @@ class MainText extends StatelessWidget {
     return Row(
       children: [
         Container(
-          margin: EdgeInsets.only(
+          margin: const EdgeInsets.only(
             top: 30,
           ),
           height: 24,
@@ -22,7 +22,7 @@ class MainText extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 20),
                 child: Text(
                   text,
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
               ),
               Positioned(
@@ -31,7 +31,7 @@ class MainText extends StatelessWidget {
                 left: 1,
                 right: 0,
                 child: Container(
-                  margin: EdgeInsets.only(left: 15, top: 20),
+                  margin: const EdgeInsets.only(left: 15, top: 20),
                   height: 2,
                   decoration: BoxDecoration(color: kPrimearyColor.withOpacity(0.2)),
                 ),
